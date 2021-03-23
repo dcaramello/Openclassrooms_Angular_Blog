@@ -7,4 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'openclassrooms-angular-blog';
+
+  test = 'test';
+
+  posts = [
+    {
+      title: "Mon premier post",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      loveIts: 3,
+      created_ad: new Date()
+    },
+    {
+      title: "Mon deuxième post",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      loveIts: 5,
+      created_ad: new Date()
+    },
+    {
+      title: "Encore un post",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      loveIts: 0,
+      created_ad: new Date()
+    }
+  ]
 }

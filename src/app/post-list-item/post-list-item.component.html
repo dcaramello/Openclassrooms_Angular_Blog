@@ -1,0 +1,12 @@
+<div [ngClass]="{
+    'list-group-item-success' : postLovits > 0,
+    'list-group-item-danger' : postLovits < 0
+    }" class="p-2">
+    <div class="blocTitle">
+        <h1>{{ postTitle }}</h1>
+        <h4 class="date">{{ postCreated | date: "short" }}</h4>
+    </div>
+    <p>{{ postContent }}</p>
+    <button (click)="onUp()" class="btn btn-success mx-2 mb-2">Love it</button>
+    <button (click)="onDown()" class="btn btn-danger mb-2">Don't love it</button>
+</div>
